@@ -23,7 +23,7 @@ a {
 
 /* NAVBAR */
 
-.nav-desktop {
+.navigasi {
   background-color: #F1F3FF;
   height: 80px;
   padding: 0 10%;
@@ -34,7 +34,6 @@ a {
 }
 
 .burger {
-  display: none;
   font-size: 2rem;
 }
 
@@ -46,16 +45,12 @@ a {
   color: #5CB85F;
 }
 
-.menu a:nth-child(1){
-  display: none !important;
-}
-
 /* HERO */
 
 .hero {
   background-color: #F1F3FF;
   padding-left: 10%;
-  height: 57vh;
+  height: 500px;
 }
 
 .img-cover{
@@ -67,7 +62,6 @@ a {
   width: 100%;
   height: 50%;
 }
-
 
 .bg-cover-bot {
   background-color: #0D28A6;
@@ -164,37 +158,27 @@ a {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .nav-desktop .menu{
-    display: none !important;
-  }
+@media screen and (max-width: 991px) {
 
-  .nav-mobile .menu {
-    display: flex !important;
-    flex-direction: column;
-    position: fixed;
+  /* NAVBAR */
+  .menu {
     background-color: #ffffff;
+    position: fixed;
     top: 0;
     right: 0;
     width: 50%;
     height: 100%;
     z-index: 1;
-    padding: 20px 15px;
-  }
-
-  .burger {
-    display: block;
+    padding: 20px;
   }
 
   .menu a:nth-child(1){
-    display: flex !important;
     width: 100%;
-    justify-content: space-between;
     padding: 15px 40px 15px 12px;
   }
 
   .btnClose {
-    color: black;
+    font-weight: bold;
   }
 
   .menu a{
@@ -207,11 +191,15 @@ a {
   }
 
   .bg-darken {
+    display: none;
     position: fixed;
     background-color: #00000069;
     width: 100%;
     height: 100%;
     z-index: 1;
   }
+
+  /* HERO */
+  
 }
 

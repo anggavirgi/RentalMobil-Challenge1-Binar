@@ -15,22 +15,22 @@
   </head>
   <body>
     <!-- BG DARKEN FOR MOBILE WHEN OPEN NAVBAR -->
-    <div class="bg-darken"></div>
+    <div class="bg-darken" id="bg-darken"></div>
 
     <!-- NAVBAR -->
-    <nav class="d-flex justify-content-between align-items-center nav-desktop nav-mobile">
+    <nav class="d-flex justify-content-between align-items-center navigasi">
       <div class="logo">
         <img src="./img/logo.png" alt="logo">
       </div>
     
-      <div class="burger">
+      <div class="d-lg-none burger" id="burger">
         <i class="bi bi-list"></i>
       </div>
 
-      <div class="d-flex gap-lg-4 gap-1 menu">
-        <a>
+      <div class="d-none flex-column gap-1 d-lg-flex flex-lg-row gap-lg-4 menu" id="menu">
+        <a class="d-flex justify-content-between d-lg-none">
           <div class="fw-bold">Binar Rental Mobil</div>
-          <div><i class="bi bi-x-lg btnClose"></i></div>
+          <div><i class="bi bi-x-lg btnClose" id="btnClose"></i></div>
         </a>
         <a href="#service">Our Services</a>
         <a href="#whyus">Why Us</a>
@@ -48,7 +48,7 @@
         <button class="btnCta">Mulai Sewa Mobil</button>
       </div>
 
-      <div class="col-lg-7 position-relative">
+      <div class="col-lg-7">
         <div class="text-center position-absolute">
           <img src="./img/cover.png" alt="" class="img-cover mt-5">
         </div>
@@ -59,7 +59,7 @@
 
     <!-- SERVICE -->
     <div class="row service" id="service">
-      <div class="col-lg-6">
+      <div class="col-lg-6 my-auto">
         <img src="./img/img1.png" alt="" class="img-service">
       </div>
       
