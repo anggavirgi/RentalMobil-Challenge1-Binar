@@ -51,6 +51,7 @@ a {
   background-color: #F1F3FF;
   padding-left: 10%;
   height: 500px;
+  margin: 0;
 }
 
 .img-cover{
@@ -65,9 +66,10 @@ a {
 
 .bg-cover-bot {
   background-color: #0D28A6;
-  width: 100%;
+  width: 100vw;
   height: 50%;
   border-top-left-radius: 60px;
+  margin: 0;
 }
 
 /* SERVICE */
@@ -87,7 +89,7 @@ a {
 /* WHY US */
 
 .whyus {
-  padding: 0 10%;
+  padding: 3% 10%;
 }
 
 .card-box {
@@ -100,11 +102,13 @@ a {
 /* TESTIMONIAL */
 
 .testimonial {
-  padding: 6% 10%;
+  padding: 6% 0;
 }
 
-.slider {
-  width: 60%;
+/* .slider {} */
+
+.main-slider {
+  width: 640px;
   background-color: #F1F3FF;
   padding: 60px 40px;
   text-align: justify;
@@ -120,7 +124,7 @@ a {
 /* BANNER */
 
 .banner {
-  padding: 0 10%;
+  padding: 3% 10%;
 }
 
 .main-banner {
@@ -147,6 +151,7 @@ a {
 }
 
 .logo-footer {
+  width: 200px;
   margin-left: -15px;
 }
 
@@ -185,7 +190,7 @@ a {
     width: max-content;
   }
 
-  .btnCta {
+  nav .btnCta {
     margin-top: 7px;
     margin-left: 10px;
   }
@@ -200,6 +205,126 @@ a {
   }
 
   /* HERO */
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero div p {
+    text-align: justify;
+    padding-right: 10%;
+  }
+
+  .img-cover {
+    width: 90%;
+    margin-top: -100px;
+  }
+
+  .bg-cover-top {
+    height: 20%;
+  }
+
+  .bg-cover-bot {
+    height: 80%;
+  }
+
+  /* SERVICE */
+
+  .img-service {
+    width: 70%;
+  }
+
+  /* WHY US */
+
+  .whyus {
+    padding: 5% 10%;
+  }
+
+  .whyus h4, .whyus p {
+    text-align: center;
+  }
+
+  .card-box {
+    width: 45%;
+  }
+
+  /* FOOTER */
+
+  .logo-footer {
+    width: 160px;
+    margin-left: -15px;
+  }
   
 }
 
+@media screen and (max-width: 768px) {
+
+  /* HERO */
+
+  .img-cover {
+    margin-top: -50px;
+  }
+
+  /* WHY US */
+
+  .card-box {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  /* HERO */
+  .hero {
+    height: 80vh;
+  }
+
+  .img-cover {
+    width: 95%;
+    margin-top: -30px;
+  }
+
+  .bg-cover-top {
+    height: 40%;
+  }
+
+  .bg-cover-bot {
+    height: 60%;
+  }
+
+  /* SERVICE */
+
+  .service {
+    padding: 6%;
+  }
+
+  /* WHY US */
+
+  .whyus {
+    padding: 5% 6%;
+  }
+
+  /* BANNER */
+
+  .main-banner {
+    padding: 80px 30px 70px;
+  }
+
+  .banner {
+    padding: 6%;
+  }
+
+  /* FAQ */
+
+  .faq {
+    padding: 8% 6%;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 3% 6%;
+  }
+
+}
