@@ -123,7 +123,7 @@
     <div class="testimonial" id="testimonial">
       <h4 class="fw-bold text-center px-4">Testimonial</h4>
       <div class="text-center py-2 px-4">Berbagai review positif dari para pelanggan kami</div>
-      <div class="d-flex slider">
+      <div class="slider d-flex">
         <div class="d-flex justify-content-between align-items-center gap-5 mt-4 main-slider">
           <div>
             <img src="./img/profile1.jpg" alt="" class="rounded-circle img-profile">
@@ -194,27 +194,62 @@
       </div>
 
       <div class="col-lg-7">
-        <div class="d-flex flex-column gap-3">
-          <div class="d-flex justify-content-between py-3 px-4 list-faq-part">
-            <div>Apa saja syarat yang dibutuhkan?</div>
-            <div><i class="bi bi-chevron-down"></i></div>
+        <div class="d-flex flex-column gap-3 accordion accordion-flush" id="accordionFlushExample">
+          <div class="list-faq-part accordion-item">
+            <div class="accordion-header" id="flush-headingOne">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Apa saja syarat yang dibutuhkan?
+              </div>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolor!</div>
+            </div>
           </div>
-          <div class="d-flex justify-content-between py-3 px-4 list-faq-part">
-            <div>Berapa hari minimal sewa mobil lepas kunci?</div>
-            <div><i class="bi bi-chevron-down"></i></div>
+
+          <div class="list-faq-part accordion-item">
+            <div class="accordion-header" id="flush-headingTwo">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Berapa hari minimal sewa mobil lepas kunci?
+              </div>
+            </div>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolor!</div>
+            </div>
           </div>
-          <div class="d-flex justify-content-between py-3 px-4 list-faq-part">
-            <div>Berapa hari sebelumnya sabaiknya booking sewa mobil?</div>
-            <div><i class="bi bi-chevron-down"></i></div>
+
+          <div class="list-faq-part accordion-item">
+            <div class="accordion-header" id="flush-headingThree">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Berapa hari sebelumnya sabaiknya booking sewa mobil?
+              </div>
+            </div>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolor!</div>
+            </div>
           </div>
-          <div class="d-flex justify-content-between py-3 px-4 list-faq-part">
-            <div>Apakah Ada biaya antar-jemput?</div>
-            <div><i class="bi bi-chevron-down"></i></div>
+
+          <div class="list-faq-part accordion-item">
+            <div class="accordion-header" id="flush-headingFour">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Apakah Ada biaya antar-jemput?
+              </div>
+            </div>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolor!</div>
+            </div>
           </div>
-          <div class="d-flex justify-content-between py-3 px-4 list-faq-part">
-            <div>Bagaimana jika terjadi kecelakaan</div>
-            <div><i class="bi bi-chevron-down"></i></div>
+
+          <div class="list-faq-part accordion-item">
+            <div class="accordion-header" id="flush-headingFive">
+              <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Bagaimana jika terjadi kecelakaan
+              </div>
+            </div>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolor!</div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>

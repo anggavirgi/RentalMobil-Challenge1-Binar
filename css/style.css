@@ -1,6 +1,7 @@
 body {
   font-family: Helvetica, sans-serif;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 
 a {
@@ -66,7 +67,7 @@ a {
 
 .bg-cover-bot {
   background-color: #0D28A6;
-  width: 100vw;
+  width: 102%;
   height: 50%;
   border-top-left-radius: 60px;
   margin: 0;
@@ -102,10 +103,13 @@ a {
 /* TESTIMONIAL */
 
 .testimonial {
-  padding: 6% 0;
+  padding: 6%;
 }
 
-/* .slider {} */
+.slider {
+  width: 100%;
+  overflow-x: scroll;
+}
 
 .main-slider {
   width: 640px;
@@ -140,8 +144,17 @@ a {
 }
 
 .list-faq-part {
-  border: 2px solid #D0D0D0;
-  border-radius: 12px;
+  border: 2px solid #D0D0D0 !important;
+  border-radius: 12px !important;
+  outline: none !important;
+}
+
+.accordion-button {
+  background-color: white !important;
+  color: #000000 !important;
+  font-size: 0.875rem;
+  margin: 2px !important;
+  width: 99%;
 }
 
 /* FOOTER */
@@ -154,6 +167,7 @@ a {
   width: 200px;
   margin-left: -15px;
 }
+
 
 /* RESPONSIVE */
 
@@ -174,12 +188,12 @@ a {
     width: 50%;
     height: 100%;
     z-index: 1;
-    padding: 20px;
+    padding: 20px 15px;
   }
 
   .menu a:nth-child(1){
     width: 100%;
-    padding: 15px 40px 15px 12px;
+    padding: 15px 12px 15px 12px;
   }
 
   .btnClose {
@@ -207,7 +221,7 @@ a {
   /* HERO */
 
   .hero {
-    height: 100vh;
+    height: 90vh;
   }
 
   .hero div p {
@@ -260,7 +274,7 @@ a {
 @media screen and (max-width: 768px) {
 
   /* HERO */
-
+  
   .img-cover {
     margin-top: -50px;
   }
